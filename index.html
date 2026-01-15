@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Fit - Sua Academia</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">POWER FIT</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">A Academia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="p-0">
+        <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://placehold.co/1920x1080/111/FFF?text=Treino+Pesado" class="d-block w-100" alt="Treino Pesado">
+                    <div class="carousel-caption">
+                        <h5>Supere seus limites</h5>
+                        <p>A melhor estrutura da cidade para o seu treino.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/1920x1080/111/FFF?text=Treino+Pesado" class="d-block w-100" alt="Esteiras">
+                    <div class="carousel-caption">
+                        <h5>Foco no resultado</h5>
+                        <p>Profissionais qualificados para te acompanhar.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </section>
+
+    <section id="sobre" class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://placehold.co/600x400/e31c25/FFF?text=Nossa+Estrutura" class="img-fluid rounded shadow w-100" alt="Equipamentos">
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <h2 class="fw-bold">Por que escolher a Power Fit?</h2>
+                <p class="lead text-muted">Não somos apenas uma academia, somos o seu parceiro de evolução.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2">✅ Aberto 24 horas</li>
+                    <li class="mb-2">✅ Equipamentos importados</li>
+                    <li class="mb-2">✅ Aulas de Yoga, Boxe e Dance</li>
+                    <li class="mb-2">✅ Estacionamento Gratuito</li>
+                </ul>
+                <a href="#planos" class="btn btn-custom mt-3">Ver Planos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Nossos Planos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center h-100">
+                        <div class="card-header">MENSAL</div>
+                        <div class="card-body">
+                            <h3 class="card-title">R$ 99,90</h3>
+                            <p class="card-text">Acesso total à musculação e aeróbico.</p>
+                            <p class="text-muted small">Sem fidelidade</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-4">
+                            <button class="btn btn-outline-dark w-100">Assinar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center h-100 border-danger border-2">
+                        <div class="card-header bg-danger text-white">ANUAL (VIP)</div>
+                        <div class="card-body">
+                            <h3 class="card-title">R$ 79,90</h3>
+                            <p class="card-text">Acesso a todas as modalidades + Cadeira de Massagem.</p>
+                            <p class="text-muted small">Fidelidade 12 meses</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-4">
+                            <button class="btn btn-custom w-100">Assinar Agora</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center h-100">
+                        <div class="card-header">PASS DIÁRIO</div>
+                        <div class="card-body">
+                            <h3 class="card-title">R$ 25,00</h3>
+                            <p class="card-text">Treine um dia inteiro quando quiser.</p>
+                            <p class="text-muted small">Pagamento na recepção</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-4">
+                            <button class="btn btn-outline-dark w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <h2 class="text-center mb-4 fw-bold">Agende uma aula experimental</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Seu Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Seu E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="exemplo@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem (opcional)</label>
+                        <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom w-100">Enviar Contato</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2024 Power Fit - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

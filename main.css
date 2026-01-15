@@ -1,0 +1,151 @@
+/* main.css - Estilos da Academia Power Fit */
+
+:root {
+    --primary-color: #e31c25; /* Vermelho energia */
+    --dark-bg: #111;          /* Fundo escuro */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* --- Navbar (Menu) --- */
+.navbar {
+    background-color: var(--dark-bg);
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: white !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* --- Carrossel (Hero) --- */
+.carousel-item img {
+    height: 90vh; /* Altura de 90% da tela no PC */
+    object-fit: cover;
+    filter: brightness(0.6); /* Escurece a foto */
+}
+
+.carousel-caption {
+    /* Removido d-none para aparecer no mobile, ajustamos via CSS */
+    bottom: 20%;
+}
+
+.carousel-caption h5 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* --- Seções Gerais --- */
+section {
+    padding: 80px 0;
+}
+
+/* Seção Sobre */
+#sobre {
+    background-color: white;
+}
+
+/* Seção Planos */
+#planos {
+    background-color: var(--dark-bg);
+    color: white;
+}
+
+/* --- Cards de Planos --- */
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card.border-danger {
+    border-color: var(--primary-color) !important;
+}
+.card.border-danger .card-header {
+    background-color: #b0121a;
+}
+
+/* --- Botões e Formulário --- */
+.btn-custom {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #b0121a;
+    color: white;
+}
+
+/* Ajuste do rodapé */
+footer {
+    background-color: #000;
+}
+
+/* =========================================
+   RESPONSIVIDADE (AJUSTES PARA CELULAR)
+   ========================================= */
+@media (max-width: 768px) {
+    
+    /* Navbar: Ajusta o menu mobile */
+    .navbar-collapse {
+        background-color: var(--dark-bg);
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Hero: Diminui a altura da imagem para não preencher a tela toda */
+    .carousel-item img {
+        height: 60vh; 
+    }
+
+    /* Hero: Diminui o tamanho da letra */
+    .carousel-caption h5 {
+        font-size: 1.8rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    /* Seções: Diminui o espaço em branco (padding) */
+    section {
+        padding: 40px 0;
+    }
+
+    /* Títulos: Ajusta tamanho da fonte */
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Espaço extra na imagem da seção Sobre */
+    #sobre img {
+        margin-bottom: 20px;
+    }
+}
